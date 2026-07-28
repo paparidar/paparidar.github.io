@@ -33,8 +33,10 @@ about: |
   data, noisy streams, regulatory requirements, and a decision maker who needs
   to know why the model said what it said.
 
-  I work with Amsterdam Airport Schiphol and the Port of Rotterdam, and a fair
-  share of my time goes on turning model output into policy briefs and
+  Amsterdam Airport Schiphol and the Port of Rotterdam are the two case studies
+  I keep coming back to. They are large, messy and reasonably well documented,
+  and they fail in different enough ways to be worth studying side by side. A
+  fair share of my time goes on turning model output into policy briefs and
   workshops for people who will never read the code. Away from all that:
   cycling, coffee, long walks, museums and galleries.
 
@@ -65,7 +67,7 @@ sections:
           - Build analytics that combine System Dynamics, agent based models and network analysis to assess operational risk across international transport networks.
           - Develop ways of ranking flights, vessels and routes under uncertainty, so that surveillance effort goes where it will matter most.
           - Work inside real constraints, including gaps in the data, noisy streams and regulatory requirements, so that models stay usable, explainable and open to audit.
-          - Supervise seven bachelor's and master's projects producing applied analytics for Amsterdam Airport Schiphol and the Port of Rotterdam.
+          - Supervise seven bachelor's and master's projects, most of them applied analytics built around Schiphol and the Port of Rotterdam as case studies.
           - Turn technical findings into briefings, policy notes and workshops for public authorities and infrastructure operators.
 
       - date: Nov 2022 — Sep 2023
