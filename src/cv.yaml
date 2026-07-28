@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # Everything on the CV page comes from this file. Edit it, run `python3 build.py`,
-# commit, push. A few values still need your input — search for TODO.
+# commit, push.
 # ---------------------------------------------------------------------------
 
 name: Pouria Paridar
@@ -8,34 +8,35 @@ role: PhD Candidate, Transport Simulation of Disease Spread
 affiliation: Delft University of Technology
 location: Delft, the Netherlands
 tagline: >-
-  PhD candidate at TU Delft modelling how infectious disease moves through
-  international transport networks, and how to see it coming.
+  PhD candidate at TU Delft, modelling how infectious disease travels through
+  international transport networks and how we might see it coming.
 
 site_url: https://paparidar.github.io
 
 photo: photo.jpg
 
 about: |
-  I'm a PhD candidate at TU Delft working on transport simulation of disease
+  I am a PhD candidate at TU Delft working on transport simulation of disease
   spread, based at the [Pandemic and Disaster Preparedness
-  Centre](https://www.pandemicpreparedness.eu/). My background is in industrial
-  and systems engineering and policy research, and the through-line across all
-  of it is systems modelling: building things that make a complicated,
-  badly-observed system legible enough to act on.
+  Centre](https://www.pandemicpreparedness.eu/). I trained first as an
+  industrial and systems engineer, then as a policy researcher, and the thread
+  running through all of it is systems modelling: building things that make a
+  complicated, poorly observed system clear enough to act on.
 
-  Most of my current work asks a version of the same question — if a pathogen is
+  Most of my current work asks a version of the same question. If a pathogen is
   moving through the world's airports and seaports, where would you have to be
-  looking to notice in time? That turns into data pipelines stitching aviation,
-  maritime, demographic and epidemiological sources together; System Dynamics,
-  agent-based and network models on top of them; and risk-ranking frameworks
-  that put flights, vessels and routes in an order someone can actually act on.
-  The constraint I care about most is deployability: sparse data, noisy streams,
-  regulatory requirements, and a decision-maker who needs to know why the model
-  said what it said.
+  looking to notice in time? In practice that becomes data pipelines that stitch
+  aviation, maritime, demographic and epidemiological sources together,
+  simulation and network models built on top of them, and ways of ranking
+  flights, vessels and routes so that somebody can act on the answer. What I
+  care about most is whether any of it survives contact with reality: sparse
+  data, noisy streams, regulatory requirements, and a decision maker who needs
+  to know why the model said what it said.
 
-  I work with Amsterdam Airport Schiphol and the Port of Rotterdam, and I spend
-  a good share of my time translating model output into policy briefs and
-  stakeholder workshops. Outside that: cycling, coffee, long walks, museums.
+  I work with Amsterdam Airport Schiphol and the Port of Rotterdam, and a fair
+  share of my time goes on turning model output into policy briefs and
+  workshops for people who will never read the code. Away from all that:
+  cycling, coffee, long walks, museums and galleries.
 
 links:
   - label: Email
@@ -60,41 +61,41 @@ sections:
         subtitle: Delft University of Technology — Pandemic and Disaster Preparedness Centre
         detail: INSPECT project, Frontrunner 5.
         bullets:
-          - Lead the design of end-to-end data pipelines integrating aviation, maritime, demographic and epidemiological datasets to support early-warning systems for transport hubs.
-          - Build simulation-driven analytics combining System Dynamics, agent-based models and network analysis to assess operational risk across international transport networks.
-          - Develop risk-ranking frameworks that prioritise flights, vessels and routes under uncertainty, feeding surveillance and operational decisions.
-          - Work within real operational constraints — data gaps, noisy streams, regulatory requirements — so that models stay deployable, explainable and auditable.
-          - Supervise seven bachelor's and master's projects delivering applied analytics for Amsterdam Airport Schiphol and the Port of Rotterdam.
-          - Translate technical output into executive-level insight, policy briefs and stakeholder workshops with public authorities and infrastructure operators.
+          - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that transport hubs can be warned early.
+          - Build analytics that combine System Dynamics, agent based models and network analysis to assess operational risk across international transport networks.
+          - Develop ways of ranking flights, vessels and routes under uncertainty, so that surveillance effort goes where it will matter most.
+          - Work inside real constraints, including gaps in the data, noisy streams and regulatory requirements, so that models stay usable, explainable and open to audit.
+          - Supervise seven bachelor's and master's projects producing applied analytics for Amsterdam Airport Schiphol and the Port of Rotterdam.
+          - Turn technical findings into briefings, policy notes and workshops for public authorities and infrastructure operators.
 
       - date: Nov 2022 — Sep 2023
         title: Research Fellow
         subtitle: University College London — Institute for Environmental Design and Engineering
         bullets:
-          - Designed data-driven decision tools for urban infrastructure and water systems.
-          - Led stakeholder-facing analytics used in policy and investment discussions.
-          - Coordinated data, modelling and reporting workflows across projects.
+          - Designed decision tools for urban infrastructure and water systems, grounded in the available data.
+          - Led the analytics that went in front of stakeholders during policy and investment discussions.
+          - Coordinated data, modelling and reporting across several projects at once.
 
       - date: 2019 — 2021
         title: Freelance Consultant
         subtitle: Systems modelling and operations — remote and Tehran
         detail: >-
-          Independent consulting for clients in energy services and
-          crisis-era manufacturing.
+          Independent consulting for clients in energy services and in
+          manufacturing during the crisis years.
         bullets:
-          - Designed analytics pipelines and demand–capacity systems models that shaped production planning and supply resilience through the COVID-19 disruption.
-          - Moved an engineering services firm from traditional goal-setting to OKRs, and trained staff in OKRs and systems thinking.
-          - Established a data recording and documentation system under ISO 9001:2015.
-          - Evaluated new business lines and startups for investment alongside R&D and organisational development teams.
+          - Designed analytics pipelines and models of demand and capacity that shaped production planning and supply resilience through the COVID-19 disruption.
+          - Moved an engineering services firm away from traditional goal setting and onto OKRs, and trained staff in OKRs and systems thinking.
+          - Set up a system for recording data and documentation under ISO 9001:2015.
+          - Assessed new business lines and startups for investment, alongside the R&D and organisational development teams.
 
       - date: 2019 — 2020
         title: Co-Founder
-        subtitle: Hamboodgah — part-time
+        subtitle: Hamboodgah — part time
         detail: A crowdfunding platform and social network for local book publishing.
         bullets:
-          - Set up the crowdfunding system with a focus on organisational selling.
-          - Developed process maps and a documentation system centred on information flows.
-          - Improved the sales system, hitting twice the first-quarter sales target.
+          - Set up the crowdfunding system, with a focus on selling to organisations.
+          - Drew up process maps and a documentation system built around how information actually moved.
+          - Reworked the sales system, and we reached twice the target in the first quarter.
 
   - title: Education
     kind: entries
@@ -104,20 +105,20 @@ sections:
         title: MSc in Policy Research
         subtitle: University of Bristol
         detail: >-
-          Dissertation: a scoping review of non-machine-learning simulation
-          models addressing prevalence, interventions and policy implications
-          through the COVID-19 pandemic internationally.
+          Dissertation: a scoping review of simulation models that did not rely
+          on machine learning, covering prevalence, interventions and policy
+          implications through the COVID-19 pandemic internationally.
         bullets:
-          - "Quantitative methods: experimental and cross-sectional design, longitudinal studies, ANOVA, regression, PCA, non-parametric tests (SPSS, R)."
-          - "Qualitative methods: interviewing, focus groups, observation, systematic review (NVivo, Covidence)."
-          - "Policy: policy analysis in complex environments, evidence and policymaking, cost-benefit analysis, implementation; global health policy and governance."
+          - "Quantitative methods: experimental and cross sectional design, longitudinal studies, ANOVA, regression, principal component analysis and tests that assume no particular distribution, worked in SPSS and R."
+          - "Qualitative methods: interviewing, focus groups, observation and systematic review, worked in NVivo and Covidence."
+          - "Policy: analysing policy in complex settings, how evidence reaches decisions, weighing costs against benefits, and what happens at implementation."
 
       - date: 2012 — 2017
         title: BEng in Industrial Engineering
         subtitle: Islamic Azad University, North Tehran Branch
-        detail: "GPA 16.06/20 — First Class Honours."
+        detail: "GPA 16.06 out of 20, First Class Honours."
         bullets:
-          - Operations research, stochastic models and queueing theory, statistical quality control, production planning and inventory control, facilities planning, simulation fundamentals, engineering economics.
+          - Operations research, stochastic models and queueing theory, statistical quality control, production planning and inventory control, facilities planning, foundations of simulation, and engineering economics.
 
   - title: Supervision
     kind: entries
@@ -126,12 +127,12 @@ sections:
         title: "Tracing pathogens through airport wastewater sampling"
         subtitle: MSc thesis — TU Delft
         detail: >-
-          Designing airport wastewater sampling networks for infectious disease
-          detection through a mixed-integer optimisation model.
+          Designing wastewater sampling networks at airports to detect
+          infectious disease, using a mixed integer optimisation model.
       - date: 2024
         title: "Prioritising wastewater sampling in the Port of Rotterdam"
         subtitle: BSc project — TU Delft
-        detail: A data-driven approach to disease detection and prevention.
+        detail: Letting the data decide where to sample first.
       - date: 2024
         title: "Gastrointestinal illness on cruise ships"
         subtitle: BSc project — TU Delft
@@ -140,18 +141,18 @@ sections:
         title: "Simulating COVID-19 on cruise ships"
         subtitle: BSc project — TU Delft
         detail: >-
-          Agent-based simulation of the α variant on the voyage from Sydney to
-          Rotterdam.
+          Simulating individual passengers and the alpha variant on the voyage
+          from Sydney to Rotterdam.
       - date: 2024
         title: "Disease spread at Schiphol Airport"
         subtitle: BSc project — TU Delft
-        detail: A behavioural model of transmission within the terminal.
+        detail: A behavioural model of transmission inside the terminal.
       - date: 2024
         title: "Disease detection at Schiphol"
         subtitle: BSc project — TU Delft
         detail: >-
-          How flight origin influences the chance of a passenger importing a
-          harmful illness into the Netherlands.
+          How the origin of a flight changes the chance of a passenger bringing
+          a harmful illness into the Netherlands.
       - date: 2024
         title: "The role of transport hubs in worldwide disease spread"
         subtitle: BSc project — TU Delft
@@ -160,28 +161,28 @@ sections:
     kind: entries
     items:
       - date: Jul 2026
-        title: Modelling travel-capable infectious population for a transport-based early warning system
+        title: Modelling Travel-Capable Infectious Population for a Transport-Based Early Warning System
         subtitle: International System Dynamics Conference — Delft, 20–24 July 2026
       - date: Nov 2025
-        title: "Early warning analysis of infectious disease spread under sparse data: an open exploration with DMDU"
+        title: "Early Warning Analysis of Infectious Disease Spread Under Sparse Data: An Open Exploration with DMDU"
         subtitle: Decision Making Under Deep Uncertainty Society Annual Meeting — London, 17–20 November 2025
       - date: Oct 2025
-        title: An analytical framework for transport route analysis to support a wastewater-based early warning system
+        title: An Analytical Framework for Transport Routes Analysis to Support a Wastewater-Based Early Warning System
         subtitle: 3rd Pandemic and Disaster Preparedness Centre Conference — Rotterdam, 3 October 2025
         image: talk-pdpc-2025.jpg
-        caption: Presenting at the 3rd PDPC Conference, Rotterdam.
+        caption: Presenting at the 3rd PDPC Conference in Rotterdam.
 
   - title: Skills
     kind: groups
     items:
       - label: Modelling
-        value: System Dynamics, agent-based modelling, network analysis, simulation, risk analysis
+        value: System Dynamics, agent based modelling, network analysis, simulation, risk analysis
       - label: Research
         value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
       - label: Tools
         value: Python, R, SPSS, NVivo, Covidence, Vensim
       - label: Also
-        value: Systems thinking, academic writing, team leadership, stakeholder communication
+        value: Systems thinking, academic writing, leading teams, talking to stakeholders
       - label: Languages
         value: English (fluent), Persian (native), Turkish (intermediate), Dutch (beginner)
 
