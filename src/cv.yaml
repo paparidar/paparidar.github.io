@@ -13,8 +13,7 @@ tagline: >-
 
 site_url: https://paparidar.github.io
 
-# Drop a square image at src/static/photo.jpg and uncomment.
-# photo: photo.jpg
+photo: photo.jpg
 
 about: |
   I'm a PhD candidate at TU Delft working on transport simulation of disease
