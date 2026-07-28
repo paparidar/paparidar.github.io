@@ -1,100 +1,239 @@
 # ---------------------------------------------------------------------------
 # Everything on the CV page comes from this file. Edit it, run `python3 build.py`,
-# commit, push. Placeholder values are marked TODO — replace them.
+# commit, push. A few values still need your input — search for TODO.
 # ---------------------------------------------------------------------------
 
 name: Pouria Paridar
-role: TODO — e.g. Data Scientist, Maritime Analytics
-affiliation: TODO — organisation or university
-location: Netherlands
-tagline: TODO — one line describing what you do; used for search results and RSS.
+role: PhD Candidate, Transport Simulation of Disease Spread
+affiliation: Delft University of Technology
+location: Delft, the Netherlands
+tagline: >-
+  PhD candidate at TU Delft modelling how infectious disease moves through
+  international transport networks, and how to see it coming.
 
-# Set this once the repo is live: https://<username>.github.io
-site_url: https://example.github.io
+site_url: https://paparidar.github.io
 
 # Drop a square image at src/static/photo.jpg and uncomment.
 # photo: photo.jpg
 
 about: |
-  TODO — two or three short paragraphs. Who you are, what you work on, what
-  you care about. Markdown works here, so you can **bold** things or
-  [link out](https://example.com).
+  I'm a PhD candidate at TU Delft working on transport simulation of disease
+  spread, based at the [Pandemic and Disaster Preparedness
+  Centre](https://www.pandemicpreparedness.eu/). My background is in industrial
+  and systems engineering and policy research, and the through-line across all
+  of it is systems modelling: building things that make a complicated,
+  badly-observed system legible enough to act on.
 
-  A good second paragraph names the specific problems you like: the kind of
-  data, the kind of question, the kind of result that makes it worth it.
+  Most of my current work asks a version of the same question — if a pathogen is
+  moving through the world's airports and seaports, where would you have to be
+  looking to notice in time? That turns into data pipelines stitching aviation,
+  maritime, demographic and epidemiological sources together; System Dynamics,
+  agent-based and network models on top of them; and risk-ranking frameworks
+  that put flights, vessels and routes in an order someone can actually act on.
+  The constraint I care about most is deployability: sparse data, noisy streams,
+  regulatory requirements, and a decision-maker who needs to know why the model
+  said what it said.
+
+  I work with Amsterdam Airport Schiphol and the Port of Rotterdam, and I spend
+  a good share of my time translating model output into policy briefs and
+  stakeholder workshops. Outside that: cycling, coffee, long walks, museums.
 
 links:
   - label: Email
-    url: mailto:pouriaparidar@gmail.com
+    url: mailto:P.Paridar@tudelft.nl
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=SmKrObsAAAAJ&hl=en
   - label: GitHub
-    url: https://github.com/TODO
-  - label: LinkedIn
-    url: https://linkedin.com/in/TODO
-  # - label: Google Scholar
-  #   url: https://scholar.google.com/citations?user=TODO
-  # - label: CV (PDF)
-  #   url: /assets/cv.pdf
-
-# ---------------------------------------------------------------------------
-# Sections render in the order listed. Three shapes are available:
-#
-#   kind: entries  -> date on the left, title/subtitle/detail/bullets/tags right
-#   kind: groups   -> label/value pairs (good for skills, languages)
-#   kind: list     -> a plain bulleted list
-#
-# Delete any section you don't want. Add as many as you like.
-# ---------------------------------------------------------------------------
+    url: https://github.com/paparidar
+  # TODO — paste your LinkedIn URL here, then uncomment:
+  # - label: LinkedIn
+  #   url: https://www.linkedin.com/in/TODO
+  - label: PDPC
+    url: https://www.pandemicpreparedness.eu/
 
 sections:
 
   - title: Experience
     kind: entries
     items:
-      - date: 2024 — present
-        title: TODO — Job title
-        subtitle: TODO — Employer, city
+
+      - date: Sep 2023 — present
+        title: PhD Candidate
+        subtitle: Delft University of Technology — Pandemic and Disaster Preparedness Centre
+        detail: INSPECT project, Frontrunner 5.
         bullets:
-          - TODO — what you built or found, with a number in it where possible.
-          - TODO — a second line; keep each to one sentence.
-      - date: 2022 — 2024
-        title: TODO — Previous role
-        subtitle: TODO — Employer, city
-        detail: TODO — a one-line description if bullets feel like too much.
+          - Lead the design of end-to-end data pipelines integrating aviation, maritime, demographic and epidemiological datasets to support early-warning systems for transport hubs.
+          - Build simulation-driven analytics combining System Dynamics, agent-based models and network analysis to assess operational risk across international transport networks.
+          - Develop risk-ranking frameworks that prioritise flights, vessels and routes under uncertainty, feeding surveillance and operational decisions.
+          - Work within real operational constraints — data gaps, noisy streams, regulatory requirements — so that models stay deployable, explainable and auditable.
+          - Supervise seven bachelor's and master's projects delivering applied analytics for Amsterdam Airport Schiphol and the Port of Rotterdam.
+          - Translate technical output into executive-level insight, policy briefs and stakeholder workshops with public authorities and infrastructure operators.
+
+      - date: Nov 2022 — Sep 2023
+        title: Research Fellow
+        subtitle: University College London — Institute for Environmental Design and Engineering
+        bullets:
+          - Designed data-driven decision tools for urban infrastructure and water systems.
+          - Led stakeholder-facing analytics used in policy and investment discussions.
+          - Coordinated data, modelling and reporting workflows across projects.
+
+      - date: Dec 2019 — Sep 2021
+        title: Restructure Consultant for COVID-19
+        subtitle: Royax s.r.o — remote
+        bullets:
+          - Designed analytics pipelines supporting operational scaling under crisis conditions.
+          - Built demand and capacity systems models that shaped production planning and supply resilience.
+          - Supported executive decision-making under extreme uncertainty.
+
+      - date: Apr 2019 — Jan 2020
+        title: Systems Analyst and Consultant
+        subtitle: Taba Engineering and Service Co. — part-time
+        detail: >-
+          Subsidiary of TANA Energy Group, serving oil, gas, petrochemical and
+          power-plant clients.
+        bullets:
+          - Moved the company from traditional goal-setting to OKRs, and trained staff in OKRs and systems thinking.
+          - Established a data recording and documentation system under ISO 9001:2015.
+          - Evaluated new business lines and startups for investment with the R&D and organisational development teams.
+
+      - date: Jan 2019 — Jun 2020
+        title: Co-Founder
+        subtitle: Hamboodgah — part-time
+        detail: A crowdfunding platform and social network for local book publishing.
+        bullets:
+          - Set up the crowdfunding system with a focus on organisational selling.
+          - Developed process maps and a documentation system centred on information flows.
+          - Improved the sales system, hitting twice the first-quarter sales target.
+
+      - date: May 2016 — Nov 2016
+        title: Quality Assurance Manager
+        subtitle: Macopharma–Fardavar — Karaj, Iran
+        detail: A joint venture between Macopharma (France) and Fardavar (Iran).
+        bullets:
+          - Started up the firm's packaging line.
+          - Established ISO 13485:2013 certification in four months.
+          - Rebuilt internal data and information flow systems, and developed the organisational chart and process maps.
 
   - title: Education
     kind: entries
     items:
-      - date: 2020 — 2022
-        title: TODO — MSc in Something
-        subtitle: TODO — University
-        detail: "Thesis: TODO — title."
-      - date: 2016 — 2020
-        title: TODO — BSc in Something
-        subtitle: TODO — University
 
-  - title: Projects
+      - date: 2021 — 2022
+        title: MSc in Policy Research
+        subtitle: University of Bristol
+        detail: >-
+          Dissertation: a scoping review of non-machine-learning simulation
+          models addressing prevalence, interventions and policy implications
+          through the COVID-19 pandemic internationally.
+        bullets:
+          - "Quantitative methods: experimental and cross-sectional design, longitudinal studies, ANOVA, regression, PCA, non-parametric tests (SPSS, R)."
+          - "Qualitative methods: interviewing, focus groups, observation, systematic review (NVivo, Covidence)."
+          - "Policy: policy analysis in complex environments, evidence and policymaking, cost-benefit analysis, implementation; global health policy and governance."
+
+      - date: 2012 — 2017
+        title: BEng in Industrial Engineering
+        subtitle: Islamic Azad University, North Tehran Branch
+        detail: "GPA 16.06/20 — First Class Honours."
+        bullets:
+          - Operations research, stochastic models and queueing theory, statistical quality control, production planning and inventory control, facilities planning, simulation fundamentals, engineering economics.
+
+  - title: Supervision
     kind: entries
     items:
-      - date: 2025
-        title: TODO — Project name
-        url: https://github.com/TODO
-        detail: TODO — one or two sentences on what it does and why it exists.
-        tags: [Python, TODO]
+      - date: 2026
+        title: "Tracing pathogens through airport wastewater sampling"
+        subtitle: MSc thesis — TU Delft
+        detail: >-
+          Designing airport wastewater sampling networks for infectious disease
+          detection through a mixed-integer optimisation model.
+      - date: 2024
+        title: "Prioritising wastewater sampling in the Port of Rotterdam"
+        subtitle: BSc project — TU Delft
+        detail: A data-driven approach to disease detection and prevention.
+      - date: 2024
+        title: "Gastrointestinal illness on cruise ships"
+        subtitle: BSc project — TU Delft
+        detail: A risk analysis for the Port of Rotterdam.
+      - date: 2024
+        title: "Simulating COVID-19 on cruise ships"
+        subtitle: BSc project — TU Delft
+        detail: >-
+          Agent-based simulation of the α variant on the voyage from Sydney to
+          Rotterdam.
+      - date: 2024
+        title: "Disease spread at Schiphol Airport"
+        subtitle: BSc project — TU Delft
+        detail: A behavioural model of transmission within the terminal.
+      - date: 2024
+        title: "Disease detection at Schiphol"
+        subtitle: BSc project — TU Delft
+        detail: >-
+          How flight origin influences the chance of a passenger importing a
+          harmful illness into the Netherlands.
+      - date: 2024
+        title: "The role of transport hubs in worldwide disease spread"
+        subtitle: BSc project — TU Delft
 
-  # - title: Publications
-  #   kind: entries
-  #   items:
-  #     - date: 2025
-  #       title: TODO — Paper title
-  #       url: https://doi.org/TODO
-  #       subtitle: Author, A., Paridar, P. — Journal Name, 12(3), 45–67.
+  - title: Talks
+    kind: entries
+    items:
+      - date: Jul 2026
+        title: Modelling travel-capable infectious population for a transport-based early warning system
+        subtitle: International System Dynamics Conference — Delft, 20–24 July 2026
+      - date: Nov 2025
+        title: "Early warning analysis of infectious disease spread under sparse data: an open exploration with DMDU"
+        subtitle: Decision Making Under Deep Uncertainty Society Annual Meeting — London, 17–20 November 2025
+      - date: Oct 2025
+        title: An analytical framework for transport route analysis to support a wastewater-based early warning system
+        subtitle: 3rd Pandemic and Disaster Preparedness Centre Conference — Rotterdam, 3 October 2025
 
   - title: Skills
     kind: groups
     items:
-      - label: Languages
-        value: TODO — Python, SQL, R
+      - label: Modelling
+        value: System Dynamics, agent-based modelling, network analysis, simulation, risk analysis
+      - label: Research
+        value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
       - label: Tools
-        value: TODO — pandas, NetworkX, PostGIS, Docker
-      - label: Spoken
-        value: TODO — English (fluent), Persian (native), Dutch (basic)
+        value: Python, R, SPSS, NVivo, Covidence, Vensim
+      - label: Also
+        value: Systems thinking, academic writing, team leadership, stakeholder communication
+      - label: Languages
+        value: English (fluent), Persian (native), Turkish (intermediate), Dutch (beginner)
+
+  - title: Service
+    kind: entries
+    items:
+      - date: 2024
+        title: Co-organiser, Policy Analysis Colloquium
+        subtitle: TU Delft
+      - date: 2022, 2023
+        title: Reviewer, International System Dynamics Conference
+        subtitle: System Dynamics Society — Frankfurt and Chicago
+
+  - title: Certificates
+    kind: groups
+    items:
+      - label: Systems
+        value: >-
+          System Dynamics Fundamentals (WPI) · System Dynamics Summer School,
+          intermediate track (System Dynamics Society) · Systems Thinking in
+          Public Health (Johns Hopkins)
+      - label: Data science
+        value: >-
+          Python for Data Science & AI, Data Analysis with Python, Data
+          Visualisation with Python (IBM) · Introduction to Predictive Modelling
+          (Minnesota) · Statistics and Data Analysis in Public Health with R
+          (Imperial)
+      - label: Evidence synthesis
+        value: >-
+          Introduction to Systematic Reviews and Meta-Analysis (Johns Hopkins) ·
+          Conducting an Intervention Review (Cochrane) · Opioid Epidemic: From
+          Evidence to Impact (Johns Hopkins)
+      - label: Health technology
+        value: >-
+          Four-course Health Technology Assessment sequence (Glasgow, Sheffield)
+      - label: Other
+        value: >-
+          Scientific Writing and Publishing (Springer Nature) · Enterprise
+          Design Thinking Practitioner and Co-Creator (IBM)

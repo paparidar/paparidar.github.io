@@ -2,13 +2,13 @@
 <rss version="2.0">
   <channel>
     <title>Pouria Paridar — blog</title>
-    <link>https://example.github.io/blog/</link>
-    <description>TODO — one line describing what you do; used for search results and RSS.</description>
+    <link>https://paparidar.github.io/blog/</link>
+    <description>PhD candidate at TU Delft modelling how infectious disease moves through international transport networks, and how to see it coming.</description>
     <language>en</language>
     <item>
       <title>Starting a blog</title>
-      <link>https://example.github.io/blog/hello/</link>
-      <guid isPermaLink="true">https://example.github.io/blog/hello/</guid>
+      <link>https://paparidar.github.io/blog/hello/</link>
+      <guid isPermaLink="true">https://paparidar.github.io/blog/hello/</guid>
       <pubDate>Tue, 28 Jul 2026 12:00:00 +0000</pubDate>
       <description>A short note on why this exists and what I plan to put here.</description>
     </item>
