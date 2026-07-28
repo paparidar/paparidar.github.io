@@ -45,9 +45,8 @@ links:
     url: https://scholar.google.com/citations?user=SmKrObsAAAAJ&hl=en
   - label: GitHub
     url: https://github.com/paparidar
-  # TODO — paste your LinkedIn URL here, then uncomment:
-  # - label: LinkedIn
-  #   url: https://www.linkedin.com/in/TODO
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/pouria-paridar/
   - label: PDPC
     url: https://www.pandemicpreparedness.eu/
 
