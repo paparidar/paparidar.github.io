@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }} — {{ cv.name }}{% endblock %}
+{% block content %}
+<article class="post">
+  <p class="crumb"><a href="{{ root }}blog/">← Blog</a></p>
+  <h1 class="pagetitle">{{ post.title }}</h1>
+  <p class="postmeta">{{ post.date_display }}{% if post.tags %} · {% for t in post.tags %}<span class="tag">{{ t }}</span>{% endfor %}{% endif %}</p>
+  <div class="prose">
+    {{ post.html | safe }}
+  </div>
+</article>
+{% endblock %}

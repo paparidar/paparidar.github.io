@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Blog — {{ cv.name }}{% endblock %}
+{% block content %}
+<h1 class="pagetitle">Blog</h1>
+{% if not posts %}<p class="det">No posts yet.</p>{% endif %}
+<ul class="entries">
+  {% for p in posts %}
+  <li class="entry">
+    <div class="when">{{ p.date_display }}</div>
+    <div class="what">
+      <h3><a href="{{ root }}blog/{{ p.slug }}/">{{ p.title }}</a></h3>
+      {% if p.summary %}<p class="det">{{ p.summary }}</p>{% endif %}
+      {% if p.tags %}<p class="tags">{% for t in p.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

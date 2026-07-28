@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ cv.name }}{% endblock %}</title>
+<meta name="description" content="{{ cv.tagline }}">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="{{ cv.name }} — blog" href="{{ root }}feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="layout">
+
+  <aside class="sidebar">
+    {% if cv.photo %}<img class="avatar" src="{{ root }}assets/{{ cv.photo }}" alt="{{ cv.name }}">{% endif %}
+    <h1 class="sb-name"><a href="{{ root }}">{{ cv.name }}</a></h1>
+    <p class="sb-role">{{ cv.role }}</p>
+    {% if cv.affiliation %}<p class="sb-affil">{{ cv.affiliation }}</p>{% endif %}
+    {% if cv.location %}<p class="sb-meta">{{ cv.location }}</p>{% endif %}
+
+    <nav class="sb-nav">
+      <a href="{{ root }}"{% if page == 'home' %} class="on"{% endif %}>CV</a>
+      <a href="{{ root }}blog/"{% if page == 'blog' %} class="on"{% endif %}>Blog</a>
+    </nav>
+
+    <ul class="sb-links">
+      {% for l in cv.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </aside>
+
+  <main id="main" class="content">
+    {% block content %}{% endblock %}
+    <footer class="foot">
+      <p>© {{ year }} {{ cv.name }} · <a href="{{ root }}feed.xml">RSS</a></p>
+    </footer>
+  </main>
+
+</div>
+</body>
+</html>

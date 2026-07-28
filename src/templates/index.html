@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="intro">
+  {{ cv.about_html | safe }}
+</section>
+
+{% for section in cv.sections %}
+<section class="sec">
+  <h2>{{ section.get('title') }}</h2>
+
+  {% if section.get('kind') == 'entries' %}
+  <ul class="entries">
+    {% for e in section['items'] %}
+    <li class="entry">
+      <div class="when">{{ e.date }}</div>
+      <div class="what">
+        <h3>{{ e.title }}{% if e.url %} <a class="ext" href="{{ e.url }}">↗</a>{% endif %}</h3>
+        {% if e.subtitle %}<p class="sub">{{ e.subtitle }}</p>{% endif %}
+        {% if e.detail %}<p class="det">{{ e.detail }}</p>{% endif %}
+        {% if e.bullets %}<ul class="bul">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
+        {% if e.tags %}<p class="tags">{% for t in e.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% elif section.get('kind') == 'groups' %}
+  <dl class="groups">
+    {% for g in section['items'] %}
+    <dt>{{ g.label }}</dt><dd>{{ g.value }}</dd>
+    {% endfor %}
+  </dl>
+
+  {% elif section.get('kind') == 'list' %}
+  <ul class="plain">
+    {% for i in section['items'] %}<li>{{ i }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endfor %}
+
+{% if posts %}
+<section class="sec">
+  <h2>Recent writing</h2>
+  <ul class="entries">
+    {% for p in posts[:3] %}
+    <li class="entry">
+      <div class="when">{{ p.date_display }}</div>
+      <div class="what"><h3><a href="{{ root }}blog/{{ p.slug }}/">{{ p.title }}</a></h3>
+      {% if p.summary %}<p class="det">{{ p.summary }}</p>{% endif %}</div>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="more"><a href="{{ root }}blog/">All posts →</a></p>
+</section>
+{% endif %}
+
+{% endblock %}

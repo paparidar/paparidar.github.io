@@ -1,0 +1,100 @@
+# ---------------------------------------------------------------------------
+# Everything on the CV page comes from this file. Edit it, run `python3 build.py`,
+# commit, push. Placeholder values are marked TODO — replace them.
+# ---------------------------------------------------------------------------
+
+name: Pouria Paridar
+role: TODO — e.g. Data Scientist, Maritime Analytics
+affiliation: TODO — organisation or university
+location: Netherlands
+tagline: TODO — one line describing what you do; used for search results and RSS.
+
+# Set this once the repo is live: https://<username>.github.io
+site_url: https://example.github.io
+
+# Drop a square image at src/static/photo.jpg and uncomment.
+# photo: photo.jpg
+
+about: |
+  TODO — two or three short paragraphs. Who you are, what you work on, what
+  you care about. Markdown works here, so you can **bold** things or
+  [link out](https://example.com).
+
+  A good second paragraph names the specific problems you like: the kind of
+  data, the kind of question, the kind of result that makes it worth it.
+
+links:
+  - label: Email
+    url: mailto:pouriaparidar@gmail.com
+  - label: GitHub
+    url: https://github.com/TODO
+  - label: LinkedIn
+    url: https://linkedin.com/in/TODO
+  # - label: Google Scholar
+  #   url: https://scholar.google.com/citations?user=TODO
+  # - label: CV (PDF)
+  #   url: /assets/cv.pdf
+
+# ---------------------------------------------------------------------------
+# Sections render in the order listed. Three shapes are available:
+#
+#   kind: entries  -> date on the left, title/subtitle/detail/bullets/tags right
+#   kind: groups   -> label/value pairs (good for skills, languages)
+#   kind: list     -> a plain bulleted list
+#
+# Delete any section you don't want. Add as many as you like.
+# ---------------------------------------------------------------------------
+
+sections:
+
+  - title: Experience
+    kind: entries
+    items:
+      - date: 2024 — present
+        title: TODO — Job title
+        subtitle: TODO — Employer, city
+        bullets:
+          - TODO — what you built or found, with a number in it where possible.
+          - TODO — a second line; keep each to one sentence.
+      - date: 2022 — 2024
+        title: TODO — Previous role
+        subtitle: TODO — Employer, city
+        detail: TODO — a one-line description if bullets feel like too much.
+
+  - title: Education
+    kind: entries
+    items:
+      - date: 2020 — 2022
+        title: TODO — MSc in Something
+        subtitle: TODO — University
+        detail: "Thesis: TODO — title."
+      - date: 2016 — 2020
+        title: TODO — BSc in Something
+        subtitle: TODO — University
+
+  - title: Projects
+    kind: entries
+    items:
+      - date: 2025
+        title: TODO — Project name
+        url: https://github.com/TODO
+        detail: TODO — one or two sentences on what it does and why it exists.
+        tags: [Python, TODO]
+
+  # - title: Publications
+  #   kind: entries
+  #   items:
+  #     - date: 2025
+  #       title: TODO — Paper title
+  #       url: https://doi.org/TODO
+  #       subtitle: Author, A., Paridar, P. — Journal Name, 12(3), 45–67.
+
+  - title: Skills
+    kind: groups
+    items:
+      - label: Languages
+        value: TODO — Python, SQL, R
+      - label: Tools
+        value: TODO — pandas, NetworkX, PostGIS, Docker
+      - label: Spoken
+        value: TODO — English (fluent), Persian (native), Dutch (basic)
