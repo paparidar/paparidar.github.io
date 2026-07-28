@@ -184,6 +184,8 @@ sections:
       - date: Oct 2025
         title: An analytical framework for transport route analysis to support a wastewater-based early warning system
         subtitle: 3rd Pandemic and Disaster Preparedness Centre Conference — Rotterdam, 3 October 2025
+        image: talk-pdpc-2025.jpg
+        caption: Presenting at the 3rd PDPC Conference, Rotterdam.
 
   - title: Skills
     kind: groups
@@ -208,30 +210,3 @@ sections:
       - date: 2022, 2023
         title: Reviewer, International System Dynamics Conference
         subtitle: System Dynamics Society — Frankfurt and Chicago
-
-  - title: Certificates
-    kind: groups
-    items:
-      - label: Systems
-        value: >-
-          System Dynamics Fundamentals (WPI) · System Dynamics Summer School,
-          intermediate track (System Dynamics Society) · Systems Thinking in
-          Public Health (Johns Hopkins)
-      - label: Data science
-        value: >-
-          Python for Data Science & AI, Data Analysis with Python, Data
-          Visualisation with Python (IBM) · Introduction to Predictive Modelling
-          (Minnesota) · Statistics and Data Analysis in Public Health with R
-          (Imperial)
-      - label: Evidence synthesis
-        value: >-
-          Introduction to Systematic Reviews and Meta-Analysis (Johns Hopkins) ·
-          Conducting an Intervention Review (Cochrane) · Opioid Epidemic: From
-          Evidence to Impact (Johns Hopkins)
-      - label: Health technology
-        value: >-
-          Four-course Health Technology Assessment sequence (Glasgow, Sheffield)
-      - label: Other
-        value: >-
-          Scientific Writing and Publishing (Springer Nature) · Enterprise
-          Design Thinking Practitioner and Co-Creator (IBM)

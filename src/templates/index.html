@@ -20,6 +20,14 @@
         {% if e.detail %}<p class="det">{{ e.detail }}</p>{% endif %}
         {% if e.bullets %}<ul class="bul">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
         {% if e.tags %}<p class="tags">{% for t in e.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+        {% if e.image %}
+        <figure class="entry-fig">
+          <a href="{{ root }}assets/{{ e.image }}">
+            <img src="{{ root }}assets/{{ e.image_thumb }}" alt="{{ e.image_alt }}" loading="lazy">
+          </a>
+          {% if e.caption %}<figcaption>{{ e.caption }}</figcaption>{% endif %}
+        </figure>
+        {% endif %}
       </div>
     </li>
     {% endfor %}

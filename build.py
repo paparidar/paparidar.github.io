@@ -150,7 +150,20 @@ ENTRY_OPTIONAL = {
     "url": "",
     "bullets": [],
     "tags": [],
+    "image": "",
+    "image_thumb": "",
+    "image_alt": "",
+    "caption": "",
 }
+
+
+def resolve_thumb(image: str) -> str:
+    """Prefer `<stem>-thumb.jpg` next to the full image, if it exists."""
+    stem, dot, ext = image.rpartition(".")
+    if not dot:
+        return image
+    candidate = f"{stem}-thumb.{ext}"
+    return candidate if (SRC / "static" / candidate).exists() else image
 
 
 def load_cv() -> dict:
@@ -174,6 +187,10 @@ def load_cv() -> dict:
             for key, default in ENTRY_OPTIONAL.items():
                 if item.get(key) is None:
                     item[key] = type(default)(default)
+            if item["image"] and not item["image_thumb"]:
+                item["image_thumb"] = resolve_thumb(item["image"])
+            if item["image"] and not item["image_alt"]:
+                item["image_alt"] = item["caption"] or item["title"]
 
     return cv
 

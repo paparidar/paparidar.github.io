@@ -39,6 +39,23 @@ and come in three shapes:
 
 Delete sections you don't want; add as many as you like.
 
+### Adding a photo to an entry
+
+Any `kind: entries` item takes an optional image:
+
+```yaml
+- date: Oct 2025
+  title: A talk I gave
+  subtitle: Some conference — Rotterdam
+  image: talk-pdpc-2025.jpg          # lives in src/static/
+  caption: Presenting at the 3rd PDPC Conference.
+```
+
+The image renders as a thumbnail that links to the full-size file. If a file
+named `<stem>-thumb.<ext>` sits next to it in `src/static/`, the build uses that
+for the thumbnail automatically — so keep a big version and a small version side
+by side and the page stays fast.
+
 ## Writing a post
 
 Create `src/posts/YYYY-MM-DD-a-slug.md`:

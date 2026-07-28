@@ -184,6 +184,23 @@ a:hover { border-bottom-color: var(--accent); }
   padding: .1rem .42rem;
 }
 
+.entry-fig { margin: .85rem 0 0; max-width: 22rem; }
+.entry-fig a { border: 0; display: block; }
+.entry-fig img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  transition: opacity .15s ease;
+}
+.entry-fig a:hover img { opacity: .88; }
+.entry-fig figcaption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  font-size: .78rem;
+  color: var(--ink-faint);
+  margin-top: .4rem;
+  line-height: 1.45;
+}
+
 .groups { margin: 0; display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: .55rem 1.5rem; }
 .groups dt {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
