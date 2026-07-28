@@ -75,6 +75,28 @@ sections:
           - Led stakeholder-facing analytics used in policy and investment discussions.
           - Coordinated data, modelling and reporting workflows across projects.
 
+      - date: 2019 — 2021
+        title: Freelance Consultant
+        subtitle: Systems modelling and operations — remote and Tehran
+        detail: >-
+          Independent consulting for clients in energy services and
+          crisis-era manufacturing, including Royax s.r.o and Taba Engineering
+          and Service Co.
+        bullets:
+          - Designed analytics pipelines and demand–capacity systems models that shaped production planning and supply resilience through the COVID-19 disruption.
+          - Moved an engineering services firm from traditional goal-setting to OKRs, and trained staff in OKRs and systems thinking.
+          - Established a data recording and documentation system under ISO 9001:2015.
+          - Evaluated new business lines and startups for investment alongside R&D and organisational development teams.
+
+      - date: 2019 — 2020
+        title: Co-Founder
+        subtitle: Hamboodgah — part-time
+        detail: A crowdfunding platform and social network for local book publishing.
+        bullets:
+          - Set up the crowdfunding system with a focus on organisational selling.
+          - Developed process maps and a documentation system centred on information flows.
+          - Improved the sales system, hitting twice the first-quarter sales target.
+
   - title: Education
     kind: entries
     items:
