@@ -63,7 +63,7 @@ sections:
         subtitle: Delft University of Technology — Pandemic and Disaster Preparedness Centre
         detail: INSPECT project, Frontrunner 5.
         bullets:
-          - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that transport hubs can be warned early.
+          - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that the networks running through major transport hubs can be modelled and public health authorities warned sooner.
           - Build analytics that combine System Dynamics, agent based models and network analysis to assess operational risk across international transport networks.
           - Develop ways of ranking flights, vessels and routes under uncertainty, so that surveillance effort goes where it will matter most.
           - Work inside real constraints, including gaps in the data, noisy streams and regulatory requirements, so that models stay usable, explainable and open to audit.
