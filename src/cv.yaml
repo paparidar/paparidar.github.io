@@ -15,6 +15,12 @@ site_url: https://paparidar.github.io
 
 photo: photo.jpg
 
+# Wide masthead image at the top of every page. Delete these two lines to remove it.
+banner: banner.jpg
+banner_alt: >-
+  Title slide reading An Analytical Framework for Transport Routes Analysis to
+  Support a Wastewater-Based Early Warning System, at the 3rd PDPC Conference.
+
 about: |
   I am a PhD candidate at TU Delft working on transport simulation of disease
   spread, based at the [Pandemic and Disaster Preparedness

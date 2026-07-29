@@ -64,6 +64,24 @@ a:hover { border-bottom-color: var(--accent); }
   border: 1px solid var(--rule); z-index: 10;
 }
 
+/* ---------- banner ---------- */
+
+.banner {
+  max-width: 1080px;
+  margin: 2.5rem auto 0;
+  padding: 0 2rem;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+}
+.banner + .layout { padding-top: 2rem; }
+
 /* ---------- layout ---------- */
 
 .layout {
@@ -303,6 +321,9 @@ a:hover { border-bottom-color: var(--accent); }
 /* ---------- responsive ---------- */
 
 @media (max-width: 860px) {
+  .banner { margin-top: 1.4rem; padding: 0 1.4rem; }
+  .banner img { aspect-ratio: 16 / 7; }
+  .banner + .layout { padding-top: 1.8rem; }
   .layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -324,7 +345,7 @@ a:hover { border-bottom-color: var(--accent); }
   body { font-size: 10.5pt; background: #fff; }
   .layout { display: block; max-width: none; padding: 0; }
   .sidebar { position: static; margin-bottom: 1.4rem; }
-  .avatar, .sb-nav, .foot, .skip { display: none; }
+  .avatar, .sb-nav, .foot, .skip, .banner { display: none; }
   .content { max-width: none; }
   .sec { margin-top: 1.4rem; padding-top: 1rem; page-break-inside: avoid; }
   .sub { color: #333; }

@@ -137,6 +137,8 @@ CV_OPTIONAL = {
     "location": "",
     "tagline": "",
     "photo": "",
+    "banner": "",
+    "banner_alt": "",
     "site_url": "",
     "about": "",
     "links": [],

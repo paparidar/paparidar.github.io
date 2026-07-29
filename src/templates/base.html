@@ -11,6 +11,11 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+{% if cv.banner and page == 'home' %}
+<div class="banner">
+  <img src="{{ root }}assets/{{ cv.banner }}" alt="{{ cv.banner_alt }}">
+</div>
+{% endif %}
 <div class="layout">
 
   <aside class="sidebar">
