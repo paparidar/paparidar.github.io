@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import json
 import re
 import shutil
 import sys
@@ -36,7 +37,14 @@ POSTS_DIR = SRC / "posts"
 OUT = ROOT
 
 # Everything the build owns and is allowed to wipe between runs.
-GENERATED = ("index.html", "blog", "assets", "feed.xml")
+GENERATED = (
+    "index.html",
+    "blog",
+    "assets",
+    "feed.xml",
+    "sitemap.xml",
+    "robots.txt",
+)
 
 MD_EXTENSIONS = ["extra", "sane_lists", "smarty", "toc", "codehilite"]
 MD_CONFIG = {"codehilite": {"noclasses": True, "pygments_style": "friendly"}}
@@ -140,6 +148,8 @@ CV_OPTIONAL = {
     "photo": "",
     "logos": [],
     "site_url": "",
+    "short_role": "",
+    "og_image": "",
     "about": "",
     "links": [],
     "sections": [],
@@ -221,6 +231,61 @@ def write(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def render_sitemap(cv: dict, posts: list[Post]) -> str:
+    base = cv["site_url"].rstrip("/")
+    today = dt.date.today().isoformat()
+
+    urls = [(f"{base}/", today), (f"{base}/blog/", today)]
+    urls += [(f"{base}/blog/{p.slug}/", p.date.isoformat()) for p in posts]
+
+    body = "\n".join(
+        f"  <url><loc>{loc}</loc><lastmod>{mod}</lastmod></url>" for loc, mod in urls
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{body}\n</urlset>\n"
+    )
+
+
+def render_robots(cv: dict) -> str:
+    base = cv["site_url"].rstrip("/")
+    return f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n"
+
+
+def render_json_ld(cv: dict) -> str:
+    """Schema.org Person, so search engines tie this page to the other profiles."""
+    base = cv["site_url"].rstrip("/")
+    same_as = [
+        link["url"]
+        for link in cv["links"]
+        if not link["url"].startswith("mailto:") and link["url"].startswith("http")
+    ]
+
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": cv["name"],
+        "url": f"{base}/",
+        "description": cv["tagline"],
+    }
+    if cv["photo"]:
+        data["image"] = f"{base}/assets/{cv['photo']}"
+    if cv["role"]:
+        data["jobTitle"] = cv["role"]
+    if cv["affiliation"]:
+        data["affiliation"] = {"@type": "Organization", "name": cv["affiliation"]}
+    for link in cv["links"]:
+        if link["url"].startswith("mailto:"):
+            data["email"] = link["url"].removeprefix("mailto:")
+            break
+    if same_as:
+        data["sameAs"] = same_as
+
+    # "</" would close the surrounding <script> tag early.
+    return json.dumps(data, indent=2, ensure_ascii=False).replace("</", "<\\/")
+
+
 def render_feed(cv: dict, posts: list[Post]) -> str:
     base = cv.get("site_url", "").rstrip("/")
 
@@ -276,31 +341,65 @@ def build(include_drafts: bool = False) -> int:
         f"{name}?v={versions[name]}" if name in versions else name
     )
     year = dt.date.today().year
-    common = {"cv": cv, "posts": posts, "year": year}
+    base = cv["site_url"].rstrip("/")
+    og_image = cv["og_image"] or cv["photo"]
+    common = {
+        "cv": cv,
+        "posts": posts,
+        "year": year,
+        "json_ld": render_json_ld(cv),
+        "og_image_url": f"{base}/assets/{og_image}" if og_image else "",
+    }
 
     clean()
 
+    role = cv["short_role"] or cv["role"]
     write(
         OUT / "index.html",
-        env.get_template("index.html").render(page="home", root="", **common),
+        env.get_template("index.html").render(
+            page="home",
+            root="",
+            page_title=f"{cv['name']} — {role}" if role else cv["name"],
+            page_description=cv["tagline"],
+            canonical=f"{base}/",
+            og_type="profile",
+            **common,
+        ),
     )
     write(
         OUT / "blog" / "index.html",
-        env.get_template("blog_index.html").render(page="blog", root="../", **common),
+        env.get_template("blog_index.html").render(
+            page="blog",
+            root="../",
+            page_title=f"Blog — {cv['name']}",
+            page_description=f"Writing by {cv['name']}. {cv['tagline']}",
+            canonical=f"{base}/blog/",
+            og_type="website",
+            **common,
+        ),
     )
     for post in posts:
         write(
             OUT / "blog" / post.slug / "index.html",
             env.get_template("post.html").render(
-                page="blog", root="../../", post=post, **common
+                page="blog",
+                root="../../",
+                post=post,
+                page_title=f"{post.title} — {cv['name']}",
+                page_description=post.summary or post.title,
+                canonical=f"{base}/blog/{post.slug}/",
+                og_type="article",
+                **common,
             ),
         )
 
     shutil.copytree(SRC / "static", OUT / "assets")
     write(OUT / "feed.xml", render_feed(cv, posts))
+    write(OUT / "sitemap.xml", render_sitemap(cv, posts))
+    write(OUT / "robots.txt", render_robots(cv))
     (OUT / ".nojekyll").touch()
 
-    print(f"built: 1 CV page, {len(posts)} post(s), feed.xml")
+    print(f"built: 1 CV page, {len(posts)} post(s), feed.xml, sitemap.xml, robots.txt")
     return 0
 
 

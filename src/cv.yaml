@@ -13,6 +13,12 @@ tagline: >-
 
 site_url: https://paparidar.github.io
 
+# Short form used in the browser tab and in link previews. Keep it under ~40 characters.
+short_role: PhD Candidate, TU Delft
+
+# 1200x630 image shown when the site is shared on LinkedIn, X, Slack etc.
+og_image: og-card.jpg
+
 photo: photo.jpg
 
 # Affiliation marks shown under the sidebar heading. Image files live in src/static/.

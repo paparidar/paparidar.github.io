@@ -3,10 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% block title %}{{ cv.name }}{% endblock %}</title>
-<meta name="description" content="{{ cv.tagline }}">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_description }}">
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:site_name" content="{{ cv.name }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_description }}">
+{% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+{% if og_image_url %}
+<meta property="og:image" content="{{ og_image_url }}">
+<meta property="og:image:alt" content="{{ cv.name }}, {{ cv.role }}">
+{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+{% if og_image_url %}<meta name="twitter:image" content="{{ og_image_url }}">{% endif %}
+
 <link rel="stylesheet" href="{{ root }}assets/{{ "style.css" | ver }}">
 <link rel="alternate" type="application/rss+xml" title="{{ cv.name }} — blog" href="{{ root }}feed.xml">
+<script type="application/ld+json">{{ json_ld | safe }}</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
 </head>
 <body>
