@@ -185,11 +185,9 @@ sections:
     kind: groups
     items:
       - label: Modelling
-        value: System Dynamics, agent based modelling, network analysis, simulation, risk analysis
+        value: System Dynamics, agent based modelling, network analysis, simulation and risk analysis, built in Python and Vensim
       - label: Research
         value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
-      - label: Tools
-        value: Python, R, SPSS, NVivo, Covidence, Vensim
       - label: Also
         value: Systems thinking, academic writing, leading teams, talking to stakeholders
       - label: Languages
