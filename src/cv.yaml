@@ -173,6 +173,16 @@ sections:
         subtitle: 3rd Pandemic and Disaster Preparedness Centre Conference — Rotterdam, 3 October 2025
         image: talk-pdpc-2025.jpg
         caption: Presenting at the 3rd PDPC Conference in Rotterdam.
+      - date: Oct 2024
+        title: "Integrated Early-Warning Surveillance Methods and Tools"
+        subtitle: 2nd Congress on Pandemic and Disaster Preparedness Research — Rotterdam, 3 October 2024
+        detail: >-
+          A joint session on combining transport network data with epi
+          intelligence, sampling methods and metaviromics into an early warning
+          system for pathogen X, with Gertjan Medema, Putri Ayu Fajar, Ege Sener
+          and Georgie Mills.
+        image: talk-pdpc-2024.jpg
+        caption: On the panel at the 2nd Congress on Pandemic and Disaster Preparedness Research, Rotterdam.
 
   - title: Skills
     kind: groups
