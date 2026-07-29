@@ -22,12 +22,12 @@ logos:
     url: https://www.tudelft.nl/
   - image: logo-pdpc.png
     alt: Pandemic and Disaster Preparedness Center
-    url: https://www.pandemicpreparedness.eu/
+    url: https://convergence.nl/pandemic-disaster-preparedness-center/
 
 about: |
   I am a PhD candidate at TU Delft working on transport simulation of disease
   spread, based at the [Pandemic and Disaster Preparedness
-  Centre](https://www.pandemicpreparedness.eu/). I trained first as an
+  Centre](https://convergence.nl/pandemic-disaster-preparedness-center/). I trained first as an
   industrial and systems engineer, then as a policy researcher, and the thread
   running through all of it is systems modelling: building things that make a
   complex, sparsely observed system clear enough to act on.
@@ -58,7 +58,7 @@ links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/pouria-paridar/
   - label: PDPC
-    url: https://www.pandemicpreparedness.eu/
+    url: https://convergence.nl/pandemic-disaster-preparedness-center/
 
 sections:
 
