@@ -22,8 +22,8 @@
         {% if e.tags %}<p class="tags">{% for t in e.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
         {% if e.image %}
         <figure class="entry-fig">
-          <a href="{{ root }}assets/{{ e.image }}">
-            <img src="{{ root }}assets/{{ e.image_thumb }}" alt="{{ e.image_alt }}" loading="lazy">
+          <a href="{{ root }}assets/{{ e.image | ver }}">
+            <img src="{{ root }}assets/{{ e.image_thumb | ver }}" alt="{{ e.image_alt }}" loading="lazy">
           </a>
           {% if e.caption %}<figcaption>{{ e.caption }}</figcaption>{% endif %}
         </figure>

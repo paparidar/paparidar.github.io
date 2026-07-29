@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ cv.name }}{% endblock %}</title>
 <meta name="description" content="{{ cv.tagline }}">
-<link rel="stylesheet" href="{{ root }}assets/style.css">
+<link rel="stylesheet" href="{{ root }}assets/{{ "style.css" | ver }}">
 <link rel="alternate" type="application/rss+xml" title="{{ cv.name }} — blog" href="{{ root }}feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
 </head>
@@ -14,7 +14,7 @@
 <div class="layout">
 
   <aside class="sidebar">
-    {% if cv.photo %}<img class="avatar" src="{{ root }}assets/{{ cv.photo }}" alt="{{ cv.name }}">{% endif %}
+    {% if cv.photo %}<img class="avatar" src="{{ root }}assets/{{ cv.photo | ver }}" alt="{{ cv.name }}">{% endif %}
     <h1 class="sb-name"><a href="{{ root }}">{{ cv.name }}</a></h1>
     <p class="sb-role">{{ cv.role }}</p>
     {% if cv.affiliation %}<p class="sb-affil">{{ cv.affiliation }}</p>{% endif %}
@@ -25,7 +25,7 @@
       {% for logo in cv.logos %}
       <li>
         <a href="{{ logo.url }}" aria-label="{{ logo.alt }}">
-          <img src="{{ root }}assets/{{ logo.image }}" alt="{{ logo.alt }}" loading="lazy">
+          <img src="{{ root }}assets/{{ logo.image | ver }}" alt="{{ logo.alt }}" loading="lazy">
         </a>
       </li>
       {% endfor %}

@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import re
 import shutil
 import sys
@@ -158,6 +159,16 @@ ENTRY_OPTIONAL = {
 }
 
 
+def asset_versions() -> dict[str, str]:
+    """Short content hash per file in src/static, for cache busting."""
+    versions: dict[str, str] = {}
+    for path in (SRC / "static").rglob("*"):
+        if path.is_file():
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()[:8]
+            versions[path.relative_to(SRC / "static").as_posix()] = digest
+    return versions
+
+
 def resolve_thumb(image: str) -> str:
     """Prefer `<stem>-thumb.jpg` next to the full image, if it exists."""
     stem, dot, ext = image.rpartition(".")
@@ -256,6 +267,13 @@ def build(include_drafts: bool = False) -> int:
         autoescape=True,
         trim_blocks=True,
         lstrip_blocks=True,
+    )
+
+    # `{{ 'photo.jpg' | ver }}` -> `photo.jpg?v=1a2b3c4d`, so a swapped image
+    # is fetched fresh instead of served from a stale browser cache.
+    versions = asset_versions()
+    env.filters["ver"] = lambda name: (
+        f"{name}?v={versions[name]}" if name in versions else name
     )
     year = dt.date.today().year
     common = {"cv": cv, "posts": posts, "year": year}
