@@ -198,9 +198,12 @@ sections:
   - title: Service
     kind: entries
     items:
+      - date: 2026
+        title: Volunteer, International System Dynamics Conference
+        subtitle: System Dynamics Society — Delft
+      - date: 2022, 2023, 2026
+        title: Reviewer, International System Dynamics Conference
+        subtitle: System Dynamics Society — Frankfurt, Chicago and Delft
       - date: 2024
         title: Co-organiser, Policy Analysis Colloquium
         subtitle: TU Delft
-      - date: 2022, 2023
-        title: Reviewer, International System Dynamics Conference
-        subtitle: System Dynamics Society — Frankfurt and Chicago
