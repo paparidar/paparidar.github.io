@@ -15,11 +15,15 @@ site_url: https://paparidar.github.io
 
 photo: photo.jpg
 
-# Wide masthead image at the top of every page. Delete these two lines to remove it.
-banner: banner.jpg
-banner_alt: >-
-  Title slide reading An Analytical Framework for Transport Routes Analysis to
-  Support a Wastewater-Based Early Warning System, at the 3rd PDPC Conference.
+# Affiliation marks shown under the sidebar heading. Put the image files in
+# src/static/ (SVG or transparent PNG works best) and uncomment.
+# logos:
+#   - image: logo-tudelft.svg
+#     alt: Delft University of Technology
+#     url: https://www.tudelft.nl/
+#   - image: logo-pdpc.svg
+#     alt: Pandemic and Disaster Preparedness Centre
+#     url: https://www.pandemicpreparedness.eu/
 
 about: |
   I am a PhD candidate at TU Delft working on transport simulation of disease

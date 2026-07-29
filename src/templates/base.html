@@ -11,11 +11,6 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-{% if cv.banner and page == 'home' %}
-<div class="banner">
-  <img src="{{ root }}assets/{{ cv.banner }}" alt="{{ cv.banner_alt }}">
-</div>
-{% endif %}
 <div class="layout">
 
   <aside class="sidebar">
@@ -24,6 +19,18 @@
     <p class="sb-role">{{ cv.role }}</p>
     {% if cv.affiliation %}<p class="sb-affil">{{ cv.affiliation }}</p>{% endif %}
     {% if cv.location %}<p class="sb-meta">{{ cv.location }}</p>{% endif %}
+
+    {% if cv.logos %}
+    <ul class="sb-logos">
+      {% for logo in cv.logos %}
+      <li>
+        <a href="{{ logo.url }}" aria-label="{{ logo.alt }}">
+          <img src="{{ root }}assets/{{ logo.image }}" alt="{{ logo.alt }}" loading="lazy">
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
     <nav class="sb-nav">
       <a href="{{ root }}"{% if page == 'home' %} class="on"{% endif %}>CV</a>

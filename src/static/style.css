@@ -64,24 +64,6 @@ a:hover { border-bottom-color: var(--accent); }
   border: 1px solid var(--rule); z-index: 10;
 }
 
-/* ---------- banner ---------- */
-
-.banner {
-  max-width: 1080px;
-  margin: 2.5rem auto 0;
-  padding: 0 2rem;
-}
-.banner img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 5;
-  object-fit: cover;
-  object-position: center;
-  border: 1px solid var(--rule);
-  border-radius: 5px;
-}
-.banner + .layout { padding-top: 2rem; }
-
 /* ---------- layout ---------- */
 
 .layout {
@@ -122,6 +104,36 @@ a:hover { border-bottom-color: var(--accent); }
 .sb-role   { margin: 0; font-size: .88rem; line-height: 1.5; color: var(--ink); }
 .sb-affil  { margin: .2rem 0 0; font-size: .84rem; color: var(--ink-soft); }
 .sb-meta   { margin: .5rem 0 0; font-size: .84rem; color: var(--ink-faint); }
+
+/* affiliation marks: quiet by default, full colour on hover */
+.sb-logos {
+  list-style: none;
+  margin: 1.15rem 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem 1.1rem;
+}
+.sb-logos li { margin: 0; }
+.sb-logos a { border: 0; display: block; }
+.sb-logos img {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 7rem;
+  object-fit: contain;
+  opacity: .62;
+  filter: grayscale(1);
+  transition: opacity .15s ease, filter .15s ease;
+}
+.sb-logos a:hover img { opacity: 1; filter: none; }
+
+@media (prefers-color-scheme: dark) {
+  /* most institutional marks are dark ink on transparent; lift them out */
+  .sb-logos img { filter: grayscale(1) invert(1) brightness(1.7); opacity: .7; }
+  .sb-logos a:hover img { filter: invert(1) brightness(1.7); opacity: 1; }
+}
 
 .sb-nav {
   margin: 1.5rem 0 1.25rem;
@@ -321,9 +333,6 @@ a:hover { border-bottom-color: var(--accent); }
 /* ---------- responsive ---------- */
 
 @media (max-width: 860px) {
-  .banner { margin-top: 1.4rem; padding: 0 1.4rem; }
-  .banner img { aspect-ratio: 16 / 7; }
-  .banner + .layout { padding-top: 1.8rem; }
   .layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -345,7 +354,8 @@ a:hover { border-bottom-color: var(--accent); }
   body { font-size: 10.5pt; background: #fff; }
   .layout { display: block; max-width: none; padding: 0; }
   .sidebar { position: static; margin-bottom: 1.4rem; }
-  .avatar, .sb-nav, .foot, .skip, .banner { display: none; }
+  .avatar, .sb-nav, .foot, .skip { display: none; }
+  .sb-logos img { filter: none; opacity: 1; height: 22px; }
   .content { max-width: none; }
   .sec { margin-top: 1.4rem; padding-top: 1rem; page-break-inside: avoid; }
   .sub { color: #333; }
