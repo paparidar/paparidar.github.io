@@ -34,10 +34,9 @@ about: |
   to know why the model said what it said.
 
   Amsterdam Airport Schiphol and the Port of Rotterdam are the two case studies
-  I keep coming back to. Both operate at a scale that makes the underlying
-  networks genuinely complex, both are unusually well documented, and air and
-  sea travel differ enough that a result from one rarely transfers to the other
-  untouched. A
+  I keep coming back to. Both operate at a scale where the underlying networks
+  become complex in their own right, and air and sea travel differ enough that
+  a result from one rarely transfers to the other untouched. A
   fair share of my time goes on turning model output into policy briefs and
   workshops for people who will never read the code. Away from all that:
   cycling, coffee, long walks, museums and galleries.
