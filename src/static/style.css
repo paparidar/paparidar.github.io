@@ -84,7 +84,7 @@ a:hover { border-bottom-color: var(--accent); }
 
 .avatar {
   width: 7rem; height: 7rem;
-  border-radius: 4px;
+  border-radius: 50%;
   object-fit: cover;
   display: block;
   margin-bottom: 1.3rem;
