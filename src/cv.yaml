@@ -15,15 +15,14 @@ site_url: https://paparidar.github.io
 
 photo: photo.jpg
 
-# Affiliation marks shown under the sidebar heading. Put the image files in
-# src/static/ (SVG or transparent PNG works best) and uncomment.
-# logos:
-#   - image: logo-tudelft.svg
-#     alt: Delft University of Technology
-#     url: https://www.tudelft.nl/
-#   - image: logo-pdpc.svg
-#     alt: Pandemic and Disaster Preparedness Centre
-#     url: https://www.pandemicpreparedness.eu/
+# Affiliation marks shown under the sidebar heading. Image files live in src/static/.
+logos:
+  - image: logo-tudelft.png
+    alt: Delft University of Technology
+    url: https://www.tudelft.nl/
+  - image: logo-pdpc.png
+    alt: Pandemic and Disaster Preparedness Center
+    url: https://www.pandemicpreparedness.eu/
 
 about: |
   I am a PhD candidate at TU Delft working on transport simulation of disease
