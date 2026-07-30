@@ -138,25 +138,38 @@ sections:
     kind: entries
     items:
       - date: 2026
-        title: "Tracing pathogens through airport wastewater sampling"
+        title: >-
+          Tracing Pathogens through Airport Wastewater Sampling: Designing
+          Airport Wastewater Sampling Networks for Infectious Disease Detection
+          through a Mixed-Integer Optimisation Model
         subtitle: MSc thesis — TU Delft
       - date: 2024
-        title: "Prioritising wastewater sampling in the Port of Rotterdam"
+        title: >-
+          Prioritising Wastewater Sampling in the Port of Rotterdam: A
+          Data-Driven Approach to Disease Detection and Prevention
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "Gastrointestinal illness on cruise ships"
+        title: >-
+          Gastrointestinal illnesses on cruise ships: a risk analysis for the
+          Port of Rotterdam
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "Simulating COVID-19 on cruise ships"
+        title: >-
+          Simulations of COVID-19 on cruise ships: Research into the spread of
+          COVID-19, the α variant, using an agent-based simulation model on the
+          journey from Sydney to Rotterdam
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "Disease spread at Schiphol Airport"
+        title: "Disease Spread at Schiphol Airport: a behavioural model"
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "Disease detection at Schiphol"
+        title: >-
+          Disease Detection at Schiphol: A research on the influence of flight
+          origin on the possibility of passengers bringing a harmful illness
+          into the Netherlands via Schiphol airport
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "The role of transport hubs in worldwide disease spread"
+        title: The Role of Transport Hubs in Worldwide Disease Spread
         subtitle: BSc project — TU Delft
 
   - title: Talks
