@@ -16,6 +16,7 @@
       <div class="when">{{ e.date }}</div>
       <div class="what">
         <h3>{{ e.title }}{% if e.url %} <a class="ext" href="{{ e.url }}">↗</a>{% endif %}</h3>
+        {% if e.title_cont %}<p class="titlecont">{{ e.title_cont }}</p>{% endif %}
         {% if e.subtitle %}<p class="sub">{{ e.subtitle }}</p>{% endif %}
         {% if e.detail %}<p class="det">{{ e.detail }}</p>{% endif %}
         {% if e.bullets %}<ul class="bul">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}

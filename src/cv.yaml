@@ -138,35 +138,36 @@ sections:
     kind: entries
     items:
       - date: 2026
-        title: >-
-          Tracing Pathogens through Airport Wastewater Sampling: Designing
-          Airport Wastewater Sampling Networks for Infectious Disease Detection
-          through a Mixed-Integer Optimisation Model
+        title: Tracing Pathogens through Airport Wastewater Sampling
+        title_cont: >-
+          Designing Airport Wastewater Sampling Networks for Infectious Disease
+          Detection through a Mixed-Integer Optimisation Model
         subtitle: MSc thesis — TU Delft
       - date: 2024
-        title: >-
-          Prioritising Wastewater Sampling in the Port of Rotterdam: A
-          Data-Driven Approach to Disease Detection and Prevention
+        title: Prioritising Wastewater Sampling in the Port of Rotterdam
+        title_cont: >-
+          A Data-Driven Approach to Disease Detection and Prevention
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: >-
-          Gastrointestinal illnesses on cruise ships: a risk analysis for the
-          Port of Rotterdam
+        title: Gastrointestinal illnesses on cruise ships
+        title_cont: A risk analysis for the Port of Rotterdam
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: >-
-          Simulations of COVID-19 on cruise ships: Research into the spread of
-          COVID-19, the α variant, using an agent-based simulation model on the
-          journey from Sydney to Rotterdam
+        title: Simulations of COVID-19 on cruise ships
+        title_cont: >-
+          Research into the spread of COVID-19, the α variant, using an
+          agent-based simulation model on the journey from Sydney to Rotterdam
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: "Disease Spread at Schiphol Airport: a behavioural model"
+        title: Disease Spread at Schiphol Airport
+        title_cont: A behavioural model
         subtitle: BSc project — TU Delft
       - date: 2024
-        title: >-
-          Disease Detection at Schiphol: A research on the influence of flight
-          origin on the possibility of passengers bringing a harmful illness
-          into the Netherlands via Schiphol airport
+        title: Disease Detection at Schiphol
+        title_cont: >-
+          A research on the influence of flight origin on the possibility of
+          passengers bringing a harmful illness into the Netherlands via
+          Schiphol airport
         subtitle: BSc project — TU Delft
       - date: 2024
         title: The Role of Transport Hubs in Worldwide Disease Spread
@@ -179,7 +180,8 @@ sections:
         title: Modelling Travel-Capable Infectious Population for a Transport-Based Early Warning System
         subtitle: International System Dynamics Conference — Delft, 20–24 July 2026
       - date: Nov 2025
-        title: "Early Warning Analysis of Infectious Disease Spread Under Sparse Data: An Open Exploration with DMDU"
+        title: Early Warning Analysis of Infectious Disease Spread Under Sparse Data
+        title_cont: An Open Exploration with DMDU
         subtitle: Decision Making Under Deep Uncertainty Society Annual Meeting — London, 17–20 November 2025
       - date: Oct 2025
         title: An Analytical Framework for Transport Routes Analysis to Support a Wastewater-Based Early Warning System

@@ -157,6 +157,7 @@ CV_OPTIONAL = {
 ENTRY_OPTIONAL = {
     "date": "",
     "title": "",
+    "title_cont": "",
     "subtitle": "",
     "detail": "",
     "url": "",

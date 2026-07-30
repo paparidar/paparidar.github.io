@@ -208,6 +208,14 @@ a:hover { border-bottom-color: var(--accent); }
 .what h3 a:hover { color: var(--accent); }
 .ext { font-size: .78em; color: var(--ink-faint); border: 0; }
 
+/* the part of a long title that follows the colon */
+.titlecont {
+  margin: .1rem 0 .22rem;
+  font-size: .92rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
 .sub { margin: 0; font-size: .89rem; color: var(--accent); }
 .det { margin: .4rem 0 0; font-size: .91rem; color: var(--ink-soft); }
 
