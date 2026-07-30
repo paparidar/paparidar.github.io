@@ -146,27 +146,18 @@ sections:
       - date: 2024
         title: "Prioritising wastewater sampling in the Port of Rotterdam"
         subtitle: BSc project — TU Delft
-        detail: Letting the data decide where to sample first.
       - date: 2024
         title: "Gastrointestinal illness on cruise ships"
         subtitle: BSc project — TU Delft
-        detail: A risk analysis for the Port of Rotterdam.
       - date: 2024
         title: "Simulating COVID-19 on cruise ships"
         subtitle: BSc project — TU Delft
-        detail: >-
-          Simulating individual passengers and the alpha variant on the voyage
-          from Sydney to Rotterdam.
       - date: 2024
         title: "Disease spread at Schiphol Airport"
         subtitle: BSc project — TU Delft
-        detail: A behavioural model of transmission inside the terminal.
       - date: 2024
         title: "Disease detection at Schiphol"
         subtitle: BSc project — TU Delft
-        detail: >-
-          How the origin of a flight changes the chance of a passenger bringing
-          a harmful illness into the Netherlands.
       - date: 2024
         title: "The role of transport hubs in worldwide disease spread"
         subtitle: BSc project — TU Delft
