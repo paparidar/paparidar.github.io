@@ -140,9 +140,6 @@ sections:
       - date: 2026
         title: "Tracing pathogens through airport wastewater sampling"
         subtitle: MSc thesis — TU Delft
-        detail: >-
-          Designing wastewater sampling networks at airports to detect
-          infectious disease, using a mixed integer optimisation model.
       - date: 2024
         title: "Prioritising wastewater sampling in the Port of Rotterdam"
         subtitle: BSc project — TU Delft
