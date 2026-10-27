@@ -99,7 +99,7 @@ sections:
 
       - date: Sep 2023 — present
         title: PhD Candidate
-        subtitle: Delft University of Technology — Pandemic and Disaster Preparedness Centre
+        subtitle: Delft University of Technology (Netherlands) — Pandemic and Disaster Preparedness Centre
         detail: INSPECT project, Frontrunner 5.
         bullets:
           - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that the networks running through major transport hubs can be modelled and public health authorities warned sooner.
@@ -110,7 +110,7 @@ sections:
 
       - date: Nov 2022 — Sep 2023
         title: Research Fellow
-        subtitle: University College London — Institute for Environmental Design and Engineering
+        subtitle: University College London (UK) — Institute for Environmental Design and Engineering
         bullets:
           - Designed decision tools for urban infrastructure and water systems, grounded in the available data.
           - Led the analytics that went in front of stakeholders during policy and investment discussions.
@@ -143,7 +143,7 @@ sections:
 
       - date: 2021 — 2022
         title: MSc in Policy Research
-        subtitle: University of Bristol
+        subtitle: University of Bristol (UK)
         detail: >-
           Dissertation: a scoping review of simulation models that did not rely
           on machine learning, covering prevalence, interventions and policy
@@ -155,7 +155,7 @@ sections:
 
       - date: 2012 — 2017
         title: BEng in Industrial Engineering
-        subtitle: Azad University, North Tehran Branch
+        subtitle: Azad University, North Tehran Branch (Iran)
         bullets:
           - Operations research, stochastic models and queueing theory, statistical quality control, production planning and inventory control, facilities planning, foundations of simulation, and engineering economics.
 
@@ -248,12 +248,12 @@ sections:
   - title: Languages
     kind: groups
     items:
-      - label: Persian
-        value: Native
       - label: English
         value: Fluent
       - label: Dutch
         value: A2
+      - label: Persian
+        value: Native
       - label: Turkish
         value: Intermediate
       - label: French
