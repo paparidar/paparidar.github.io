@@ -30,6 +30,7 @@ from pathlib import Path
 import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
+from markupsafe import Markup
 
 ROOT = Path(__file__).parent.resolve()
 SRC = ROOT / "src"
@@ -339,6 +340,15 @@ def build(include_drafts: bool = False) -> int:
 
     # `{{ 'photo.jpg' | ver }}` -> `photo.jpg?v=1a2b3c4d`, so a swapped image
     # is fetched fresh instead of served from a stale browser cache.
+    # `{{ text | md_inline }}`: bold/italic/links inside one line (citations).
+    def md_inline(text: str) -> Markup:
+        html = markdown.markdown(text, extensions=["smarty"])
+        if html.startswith("<p>") and html.endswith("</p>"):
+            html = html[3:-4]
+        return Markup(html)
+
+    env.filters["md_inline"] = md_inline
+
     versions = asset_versions()
     env.filters["ver"] = lambda name: (
         f"{name}?v={versions[name]}" if name in versions else name

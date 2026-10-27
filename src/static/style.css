@@ -293,6 +293,20 @@ body::before {
 }
 @media print { .entry-video .video-frame { display: none; } }
 
+.pub-group {
+  font-size: .8rem; font-weight: 600; color: var(--ink-faint);
+  text-transform: uppercase; letter-spacing: .06em;
+  margin: 1.6rem 0 .7rem;
+}
+.pub-group:first-of-type { margin-top: 0; }
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pubs li {
+  font-size: .93rem; line-height: 1.6;
+  padding-left: 1.6rem; text-indent: -1.6rem;   /* APA hanging indent */
+  margin-bottom: .75rem; overflow-wrap: anywhere;
+}
+.pubs strong { color: var(--ink); font-weight: 600; }
+
 .groups { margin: 0; display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: .55rem 1.5rem; }
 .groups dt { font-size: .8rem; color: var(--ink-faint); padding-top: .14rem; }
 .groups dd { margin: 0; font-size: .93rem; }

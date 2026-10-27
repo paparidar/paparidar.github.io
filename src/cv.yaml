@@ -38,15 +38,13 @@ about: |
   running through all of it is systems modelling: building things that make a
   complex, sparsely observed system clear enough to act on.
 
-  Most of my current work asks a version of the same question. If a pathogen is
-  moving through the world's airports and seaports, where would you have to be
-  looking to notice in time? In practice that becomes data pipelines that stitch
-  aviation, maritime, demographic and epidemiological sources together,
-  simulation and network models built on top of them, and ways of ranking
-  flights, vessels and routes so that somebody can act on the answer. What I
-  care about most is whether any of it survives contact with reality: sparse
-  data, noisy streams, regulatory requirements, and a decision maker who needs
-  to know why the model said what it said.
+  I develop computational methods for early warning of infectious disease
+  spread through transport networks. My work combines data pipelines that link
+  maritime (AIS), aviation, demographic and epidemiological data; system
+  dynamics and agent-based models of how infectious people and pathogens
+  travel; and network analysis to rank routes, vessels and sampling sites for
+  surveillance. I evaluate these methods under deep uncertainty, so that they
+  support robust policy decisions.
 
   Amsterdam Airport Schiphol and the Port of Rotterdam are the two case studies
   I keep coming back to. Both operate at a scale where the underlying networks
@@ -118,7 +116,7 @@ sections:
 
       - date: 2017 — 2021
         title: Freelance Consultant
-        subtitle: Systems modelling and operations — remote and Tehran
+        subtitle: Systems modelling and operations — multiple countries
         detail: >-
           Independent consulting for clients in energy services and in
           manufacturing during the crisis years.
@@ -159,9 +157,33 @@ sections:
         bullets:
           - Operations research, stochastic models and queueing theory, statistical quality control, production planning and inventory control, facilities planning, foundations of simulation, and engineering economics.
 
-  - title: Supervision
+  - title: Publications
+    kind: publications
+    items:
+      - heading: Journal articles
+        refs:
+          - "Adlung, C., **Paridar, P.**, Figueroa, C. A., Niehot, C. D., Kanumoory Mandyam, N., van Beers, C. P., & Hinrichs-Krapels, S. (2026). Adoption of telemedicine in low-resource settings through the lens of frugal innovation: Protocol for a systematic review. *JMIR Research Protocols*, *15*, e83311. <https://doi.org/10.2196/83311>"
+      - heading: Conference papers
+        refs:
+          - "**Paridar, P.**, Hulland, E., Huang, Y., & Verbraeck, A. (2026). *A system dynamics framework for transport-based early warning: Modelling travel-capable infectious population* [Conference paper]. International System Dynamics Conference, Delft. Abstract: <https://proceedings.systemdynamics.org/2026/abstracts/1389.html>"
+          - "Zhou, K., Pluchinotta, I., **Paridar, P.**, & Zimmermann, N. (2023). *Comparisons of emotional boundaries: A case study of water neutrality and sustainable urban development in London* [Conference paper]. International System Dynamics Conference. Abstract: <https://proceedings.systemdynamics.org/2023/abstracts/1251.html>"
+      - heading: In preparation
+        refs:
+          - "Manuscripts in preparation on transport-based early warning, maritime disease importation, cruise ship outbreak modelling and airport wastewater surveillance."
+
+  - title: Teaching and Supervision
     kind: entries
     items:
+      - date: 2025
+        title: Tutor, Preparation Master Thesis (EPA222A)
+        subtitle: MSc Engineering and Policy Analysis, TU Delft
+        detail: >-
+          Supported MSc students in designing their thesis research proposals
+          through workshops and feedback on drafts.
+      - date: 2023
+        title: Tutor, System Dynamics
+        subtitle: Institute for Environmental Design and Engineering, University College London
+        detail: Tutored selected sessions with Prof. Nici Zimmermann.
       - date: 2026
         title: Tracing Pathogens through Airport Wastewater Sampling
         title_cont: >-
@@ -239,7 +261,7 @@ sections:
     kind: groups
     items:
       - label: Modelling
-        value: System Dynamics, agent based modelling, network analysis, simulation and risk analysis, built in Python and Vensim
+        value: System Dynamics, agent based modelling, network analysis, simulation and risk analysis, built in Python, Julia (currently learning), Vensim and the EMA Workbench
       - label: Research
         value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
       - label: Also

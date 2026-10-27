@@ -49,6 +49,14 @@
     {% endfor %}
   </dl>
 
+  {% elif section.get('kind') == 'publications' %}
+  {% for g in section['items'] %}
+  <h3 class="pub-group">{{ g.heading }}</h3>
+  <ul class="pubs">
+    {% for ref in g['refs'] %}<li>{{ ref | md_inline }}</li>{% endfor %}
+  </ul>
+  {% endfor %}
+
   {% elif section.get('kind') == 'list' %}
   <ul class="plain">
     {% for i in section['items'] %}<li>{{ i }}</li>{% endfor %}
