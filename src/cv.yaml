@@ -68,6 +68,31 @@ links:
 
 sections:
 
+  - title: Research Project
+    kind: entries
+    items:
+      - date: Since 2023
+        title: "INSPECT Frontrunner 5: Integrated Early-Warning Surveillance Methods and Tools"
+        url: https://convergence.nl/science-speaks-frontrunner-5-integrated-early-warning-surveillance-methods-and-tools/
+        subtitle: Pandemic and Disaster Preparedness Centre, with TU Delft, Erasmus MC, Erasmus University Rotterdam and KWR
+        detail: >-
+          Frontrunner 5 aims to spot emerging pathogens earlier, particularly
+          those carried along international shipping and aviation routes, so
+          that public health authorities have more time to act before a local
+          threat grows into a wider crisis. The team draws on several kinds of
+          evidence. Wastewater sampled at transport hubs such as the Port of
+          Rotterdam and Schiphol can reveal traces of more than a thousand virus
+          types from a very small sample, often before anyone visits a doctor.
+          Genomic analysis, online search trends and social media add further
+          signals. My part is modelling how pathogens move through transport
+          networks, to show where and when the risk of introduction is rising.
+          Brought together, these strands help separate genuine threats from
+          background noise and feed an integrated early-warning system, built
+          with the Port Health Authority of Rotterdam and the public health
+          services.
+        video: Dejvy3YEXMM
+        video_caption: Science Speaks, a short film on Frontrunner 5 by the PDPC (October 2026).
+
   - title: Experience
     kind: entries
     items:
@@ -176,6 +201,17 @@ sections:
   - title: Talks
     kind: entries
     items:
+      - date: Oct 2026
+        title: "Planes, Ports, Pipes, and Posts"
+        title_cont: Tracking a virus from import to detection
+        subtitle: 4th Congress on Pandemic and Disaster Preparedness, Rotterdam, 8 October 2026
+        detail: >-
+          A Frontrunner 5 session in the surveillance and early detection track.
+          I set out the main routes by which viruses reach the Netherlands and
+          where sampling would be most worthwhile, alongside Miranda de Graaf,
+          Ege Sener and Erin Frame.
+        image: talk-pdpc-2026.jpg
+        caption: Frontrunner 5 presenting at the 4th PDPC Congress, De Doelen, Rotterdam.
       - date: Jul 2026
         title: Modelling Travel-Capable Infectious Population for a Transport-Based Early Warning System
         subtitle: International System Dynamics Conference — Delft, 20–24 July 2026
@@ -208,8 +244,20 @@ sections:
         value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
       - label: Also
         value: Systems thinking, academic writing, leading teams, talking to stakeholders
-      - label: Languages
-        value: English (fluent), Persian (native), Turkish (intermediate), Dutch (beginner)
+
+  - title: Languages
+    kind: groups
+    items:
+      - label: Persian
+        value: Native
+      - label: English
+        value: Fluent
+      - label: Dutch
+        value: A2
+      - label: Turkish
+        value: Intermediate
+      - label: French
+        value: Beginner
 
   - title: Service
     kind: entries

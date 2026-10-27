@@ -167,6 +167,8 @@ ENTRY_OPTIONAL = {
     "image_thumb": "",
     "image_alt": "",
     "caption": "",
+    "video": "",
+    "video_caption": "",
 }
 
 

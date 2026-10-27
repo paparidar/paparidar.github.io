@@ -21,6 +21,14 @@
         {% if e.detail %}<p class="det">{{ e.detail }}</p>{% endif %}
         {% if e.bullets %}<ul class="bul">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
         {% if e.tags %}<p class="tags">{% for t in e.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+        {% if e.video %}
+        <figure class="entry-video">
+          <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ e.video }}" title="{{ e.video_caption or e.title }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          </div>
+          {% if e.video_caption %}<figcaption>{{ e.video_caption }} <a href="https://youtu.be/{{ e.video }}">Watch on YouTube</a></figcaption>{% endif %}
+        </figure>
+        {% endif %}
         {% if e.image %}
         <figure class="entry-fig">
           <a href="{{ root }}assets/{{ e.image | ver }}">
