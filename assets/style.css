@@ -77,6 +77,20 @@ body::before {
           mask: url("bg-network.svg") center / cover no-repeat;
 }
 @media (prefers-color-scheme: dark) { body::before { opacity: .12; } }
+/* phones: a portrait screen only sees the faded middle of the wide drawing,
+   so show its two busy corners instead (plane/airport top right, ship bottom left) */
+@media (max-width: 760px) {
+  body::before {
+    opacity: .14;
+    -webkit-mask:
+      url("bg-network.svg") right 0 top 0 / 700px auto no-repeat,
+      url("bg-network.svg") left 0 bottom 0 / 700px auto no-repeat;
+            mask:
+      url("bg-network.svg") right 0 top 0 / 700px auto no-repeat,
+      url("bg-network.svg") left 0 bottom 0 / 700px auto no-repeat;
+  }
+  body { background-attachment: scroll; }
+}
 @media print { body::before { display: none; } body { background: #fff; } }
 .skip:focus {
   left: 1rem; top: 1rem; background: var(--bg); padding: .5rem .8rem;
