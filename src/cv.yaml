@@ -43,8 +43,8 @@ about: |
   maritime (AIS), aviation, demographic and epidemiological data; system
   dynamics and agent-based models of how infectious people and pathogens
   travel; and network analysis to rank routes, vessels and sampling sites for
-  surveillance. I evaluate these methods under deep uncertainty, so that they
-  support robust policy decisions.
+  surveillance. I am also exploring how methods for decision making under deep
+  uncertainty can make these models more useful for policy.
 
   Amsterdam Airport Schiphol and the Port of Rotterdam are the two case studies
   I keep coming back to. Both operate at a scale where the underlying networks
@@ -100,10 +100,10 @@ sections:
         subtitle: Delft University of Technology (Netherlands) — Pandemic and Disaster Preparedness Centre
         detail: INSPECT project, Frontrunner 5.
         bullets:
-          - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that the networks running through major transport hubs can be modelled and public health authorities warned sooner.
-          - Build analytics that combine System Dynamics, agent based models and network analysis to assess operational risk across international transport networks.
-          - Develop ways of ranking flights, vessels and routes under uncertainty, so that surveillance effort goes where it will matter most.
-          - Work inside real constraints, including gaps in the data, noisy streams and regulatory requirements, so that models stay usable, explainable and open to audit.
+          - Lead the design of data pipelines that bring aviation, maritime, demographic and epidemiological datasets together, so that the networks running through major transport hubs can be modelled, with the aim of giving public health authorities earlier warning.
+          - Combine System Dynamics, agent based models and network analysis to assess the risk of disease importation through international transport networks.
+          - Develop ways of ranking flights, vessels and routes, so that surveillance effort goes where it is most needed.
+          - Design models around real data constraints, such as gaps and noisy streams, so that they stay usable and explainable.
           - Supervise bachelor's and master's projects, most of them applied analytics built around Schiphol and the Port of Rotterdam as case studies.
 
       - date: Nov 2022 — Sep 2023
@@ -111,7 +111,7 @@ sections:
         subtitle: University College London (UK) — Institute for Environmental Design and Engineering
         bullets:
           - Designed decision tools for urban infrastructure and water systems, grounded in the available data.
-          - Led the analytics that went in front of stakeholders during policy and investment discussions.
+          - Prepared the analyses presented to stakeholders in policy discussions.
           - Coordinated data, modelling and reporting across several projects at once.
 
       - date: 2017 — 2021
@@ -121,7 +121,7 @@ sections:
           Independent consulting for clients in energy services and in
           manufacturing during the crisis years.
         bullets:
-          - Designed analytics pipelines and models of demand and capacity that shaped production planning and supply resilience through the COVID-19 disruption.
+          - Designed analytics pipelines and models of demand and capacity to support production planning through the COVID-19 disruption.
           - Moved an engineering services firm away from traditional goal setting and onto OKRs, and trained staff in OKRs and systems thinking.
           - Set up a system for recording data and documentation under ISO 9001:2015.
           - Assessed new business lines and startups for investment, alongside the R&D and organisational development teams.
