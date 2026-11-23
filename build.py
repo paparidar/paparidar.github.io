@@ -169,6 +169,7 @@ ENTRY_OPTIONAL = {
     "image_alt": "",
     "caption": "",
     "video": "",
+    "video_start": 0,
     "video_caption": "",
 }
 

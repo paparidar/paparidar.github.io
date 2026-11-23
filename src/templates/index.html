@@ -24,9 +24,9 @@
         {% if e.video %}
         <figure class="entry-video">
           <div class="video-frame">
-            <iframe src="https://www.youtube-nocookie.com/embed/{{ e.video }}" title="{{ e.video_caption or e.title }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ e.video }}{% if e.video_start %}?start={{ e.video_start }}{% endif %}" title="{{ e.video_caption or e.title }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
           </div>
-          {% if e.video_caption %}<figcaption>{{ e.video_caption }} <a href="https://youtu.be/{{ e.video }}">Watch on YouTube</a></figcaption>{% endif %}
+          {% if e.video_caption %}<figcaption>{{ e.video_caption }} <a href="https://youtu.be/{{ e.video }}{% if e.video_start %}?t={{ e.video_start }}{% endif %}">Watch on YouTube</a></figcaption>{% endif %}
         </figure>
         {% endif %}
         {% if e.image %}
