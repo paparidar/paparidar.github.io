@@ -171,7 +171,10 @@ sections:
           - "Zhou, K., Pluchinotta, I., **Paridar, P.**, & Zimmermann, N. (2023). *Comparisons of emotional boundaries: A case study of water neutrality and sustainable urban development in London* [Conference paper]. International System Dynamics Conference. Abstract: <https://proceedings.systemdynamics.org/2023/abstracts/1251.html>"
       - heading: In preparation
         refs:
-          - "Manuscripts in preparation on transport-based early warning, maritime disease importation, cruise ship outbreak modelling and airport wastewater surveillance."
+          - "**Paridar, P.**, Hulland, E., Huang, Y., & Verbraeck, A. (2026). *Modelling the travel of infectious people to transport hubs: A system dynamics model of mpox clade Ib in the Democratic Republic of the Congo* [Manuscript in preparation]."
+          - "**Paridar, P.**, Huang, Y., & Verbraeck, A. (2026). *MEWSID: An AIS-based early-warning framework for infectious disease importation through maritime trade* [Manuscript in preparation]."
+          - "**Paridar, P.**, Huang, Y., & Verbraeck, A. (2026). *Coupling onboard transmission and itinerary networks to assess outbreak risk on cruise ships* [Manuscript in preparation]."
+          - "Steeman, F., **Paridar, P.**, Stokkink, P., & Verbraeck, A. (2026). *Optimising airport wastewater sampling networks for infectious disease detection at Amsterdam Airport Schiphol* [Manuscript in preparation]."
 
   - title: Teaching
     kind: entries
@@ -267,13 +270,13 @@ sections:
     kind: groups
     items:
       - label: Modelling
-        value: System Dynamics, agent based modelling, network analysis, simulation and risk analysis
+        value: System Dynamics, agent based modelling, network analysis, simulation and risk analysis, decision making under deep uncertainty (DMDU)
       - label: Programming and Software
-        value: Python, Julia (currently learning), Vensim, EMA Workbench
+        value: Python, Julia (currently learning), Vensim
       - label: Research
         value: Quantitative and qualitative methods, systematic review, participatory research, policy analysis
       - label: Also
-        value: Systems thinking, academic writing, leading teams, talking to stakeholders
+        value: Systems thinking, academic writing, leading teams, stakeholder engagement
 
   - title: Languages
     kind: groups
@@ -281,13 +284,11 @@ sections:
       - label: English
         value: Fluent
       - label: Dutch
-        value: A2
+        value: B1
       - label: Persian
         value: Native
       - label: Turkish
         value: Intermediate
-      - label: French
-        value: Beginner
 
   - title: Service
     kind: entries
